@@ -1,0 +1,753 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/owner/ontologies/2018/2/3/untitled-ontology-16#"
+     xml:base="http://www.semanticweb.org/owner/ontologies/2018/2/3/untitled-ontology-16"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ontologies="http://www.music.owl/ontologies/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/owner/ontologies/2018/2/3/untitled-ontology-16">
+        <rdfs:comment>Some of the entity definitions come from Wikipedia (https://en.wikipedia.org/wiki/Main_Page) while others have been written from my personal expertise on this subject.</rdfs:comment>
+        <rdfs:comment>A music Collection antology containing record albums and CDs</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.music.owl/ontologies/pizza_0000082 -->
+
+    <owl:AnnotationProperty rdf:about="http://www.music.owl/ontologies/pizza_0000082">
+        <rdfs:label xml:lang="en">Definition</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#isDefinedBy -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">
+        <rdfs:domain rdf:resource="http://www.pizza.owl/ontologies/pizza_0000088"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.music.owl/ontologies/pizza_0000081 -->
+
+    <owl:ObjectProperty rdf:about="http://www.music.owl/ontologies/pizza_0000081">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:label xml:lang="en">hasReleaseCompany</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.music.owl/ontologies/pizza_0000111 -->
+
+    <owl:ObjectProperty rdf:about="http://www.music.owl/ontologies/pizza_0000111">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.music.owl/ontologies/music_0000070"/>
+        <rdfs:domain rdf:resource="http://www.music.owl/ontologies/music_0000103"/>
+        <rdfs:label xml:lang="en">hasTitle</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.music.owl/ontologies/pizza_0000112 -->
+
+    <owl:ObjectProperty rdf:about="http://www.music.owl/ontologies/pizza_0000112">
+        <rdfs:label xml:lang="en">hasArranger</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.music.owl/ontologies/pizza_0000114 -->
+
+    <owl:ObjectProperty rdf:about="http://www.music.owl/ontologies/pizza_0000114">
+        <rdfs:domain rdf:resource="http://www.music.owl/ontologies/music_0000070"/>
+        <rdfs:label xml:lang="en">hasGendre</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.music.owl/ontologies/pizza_0000115 -->
+
+    <owl:ObjectProperty rdf:about="http://www.music.owl/ontologies/pizza_0000115">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:label xml:lang="en">hasReleaseDecade</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.music.owl/ontologies/pizza_0000116 -->
+
+    <owl:ObjectProperty rdf:about="http://www.music.owl/ontologies/pizza_0000116">
+        <rdfs:domain rdf:resource="http://www.music.owl/ontologies/music_0000067"/>
+        <rdfs:domain rdf:resource="http://www.music.owl/ontologies/music_0000088"/>
+        <rdfs:label xml:lang="en">hasArtist</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.music.owl/ontologies/music_0000067 -->
+
+    <owl:Class rdf:about="http://www.music.owl/ontologies/music_0000067">
+        <ontologies:pizza_0000082>Collection of songs on either a 10&quot; or 12&quot; vinyl disc</ontologies:pizza_0000082>
+        <rdfs:label xml:lang="en">Record</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.music.owl/ontologies/music_0000068 -->
+
+    <owl:Class rdf:about="http://www.music.owl/ontologies/music_0000068">
+        <ontologies:pizza_0000082>
+            <rdf:Description/>
+        </ontologies:pizza_0000082>
+        <ontologies:pizza_0000082>A defining type of music</ontologies:pizza_0000082>
+        <rdfs:label xml:lang="en">Genre</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.music.owl/ontologies/music_0000069 -->
+
+    <owl:Class rdf:about="http://www.music.owl/ontologies/music_0000069">
+        <ontologies:pizza_0000082>The long playing (LP) record became a standard format in the 1950&apos;s.  Sub-dividing the eras helps to define the expected sound typical of music within the era.</ontologies:pizza_0000082>
+        <rdfs:label xml:lang="en">Release_Decade</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.music.owl/ontologies/music_0000070 -->
+
+    <owl:Class rdf:about="http://www.music.owl/ontologies/music_0000070">
+        <ontologies:pizza_0000082>Singer, musician, etc.</ontologies:pizza_0000082>
+        <rdfs:label xml:lang="en">Artist</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.music.owl/ontologies/music_0000071 -->
+
+    <owl:Class rdf:about="http://www.music.owl/ontologies/music_0000071">
+        <rdfs:comment>The Release Company is the original label entity which recorded and released the original album.</rdfs:comment>
+        <rdfs:label xml:lang="en">Release_Company</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.music.owl/ontologies/music_0000073 -->
+
+    <owl:Class rdf:about="http://www.music.owl/ontologies/music_0000073">
+        <rdfs:subClassOf rdf:resource="http://www.music.owl/ontologies/music_0000071"/>
+        <rdfs:comment>Decca Records started as a US branch of the British label of the same name in 1934 and became a major player in the US recording market by signing major artists such as Bing Crosby and Louis Armstrong.</rdfs:comment>
+        <rdfs:label xml:lang="en">Decca</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.music.owl/ontologies/music_0000074 -->
+
+    <owl:Class rdf:about="http://www.music.owl/ontologies/music_0000074">
+        <rdfs:subClassOf rdf:resource="http://www.music.owl/ontologies/music_0000071"/>
+        <rdfs:comment>RCA is the second oldest recording company in US history and gets its name from its original parent company the Radio Corporation of America.  The label was known for impressive technical innovations, such as the 45 rpm record, stereo recording and quadrophonic surround sound.</rdfs:comment>
+        <rdfs:label xml:lang="en">RCA</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.music.owl/ontologies/music_0000075 -->
+
+    <owl:Class rdf:about="http://www.music.owl/ontologies/music_0000075">
+        <rdfs:subClassOf rdf:resource="http://www.music.owl/ontologies/music_0000071"/>
+        <rdfs:comment>Columbia Records is a major American record label which is the oldest surviving brand name in the recorded sound business.</rdfs:comment>
+        <rdfs:label xml:lang="en">Columbia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.music.owl/ontologies/music_0000076 -->
+
+    <owl:Class rdf:about="http://www.music.owl/ontologies/music_0000076">
+        <rdfs:subClassOf rdf:resource="http://www.music.owl/ontologies/music_0000071"/>
+        <rdfs:comment>Blue Note Records is an American jazz record label, owned by Universal Music Group.  It gets its name from the characteristic &quot;blue notes&quot; of jazz and the blues.</rdfs:comment>
+        <rdfs:label xml:lang="en">BlueNote</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.music.owl/ontologies/music_0000077 -->
+
+    <owl:Class rdf:about="http://www.music.owl/ontologies/music_0000077">
+        <rdfs:subClassOf rdf:resource="http://www.music.owl/ontologies/music_0000068"/>
+        <ontologies:pizza_0000082>Jazz, can be sub-devided into sub categories based on stylistic differeneces but is unified by the approach of loosley connected arrangments where musicians improvise on a melody to create unique performances.</ontologies:pizza_0000082>
+        <rdfs:label xml:lang="en">Jazz</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.music.owl/ontologies/music_0000083 -->
+
+    <owl:Class rdf:about="http://www.music.owl/ontologies/music_0000083">
+        <rdfs:subClassOf rdf:resource="http://www.music.owl/ontologies/music_0000071"/>
+        <rdfs:comment>Reprise Records is a major American record label, founded in 1960 by Frank Sinatra. Sinatra was displeased with the approach of Capitol Records and decided to start an artist-centric label where the artists would own their own masters and be able to have a greater say in their material and career direction.  The label&apos;s records were produced and distributed by Warner Brothers.</rdfs:comment>
+        <rdfs:label xml:lang="en">Reprise</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.music.owl/ontologies/music_0000084 -->
+
+    <owl:Class rdf:about="http://www.music.owl/ontologies/music_0000084">
+        <rdfs:subClassOf rdf:resource="http://www.music.owl/ontologies/music_0000069"/>
+        <ontologies:pizza_0000082>A relatively simple time defined by unchallenging balands and pop tunes and late into the era the explosion of teenager-focused rock and roll muic.  Strangely enough, this decade saw some of the best adult contemprary music committed to vinyl.</ontologies:pizza_0000082>
+        <rdfs:label xml:lang="en">1950s</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.music.owl/ontologies/music_0000085 -->
+
+    <owl:Class rdf:about="http://www.music.owl/ontologies/music_0000085">
+        <rdfs:subClassOf rdf:resource="http://www.music.owl/ontologies/music_0000069"/>
+        <ontologies:pizza_0000082>The 1960&apos;s in music was as turbulent as the politics of the day; adult contemporary music fought for a place beside rock, folk, contry and many songs of protest to the Vietnam war and the expanding equal rights social movement for womena and monority groups.</ontologies:pizza_0000082>
+        <rdfs:label xml:lang="en">1960s</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.music.owl/ontologies/music_0000086 -->
+
+    <owl:Class rdf:about="http://www.music.owl/ontologies/music_0000086">
+        <rdfs:subClassOf rdf:resource="http://www.music.owl/ontologies/music_0000069"/>
+        <ontologies:pizza_0000082>This decade was defined in large measure by large orchestra arangements (even in rock music) and the popularity of Disco which was an outgrowth of Motown sounds of the 1960&apos;s.</ontologies:pizza_0000082>
+        <rdfs:label xml:lang="en">1970s</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.music.owl/ontologies/music_0000087 -->
+
+    <owl:Class rdf:about="http://www.music.owl/ontologies/music_0000087">
+        <rdfs:subClassOf rdf:resource="http://www.music.owl/ontologies/music_0000069"/>
+        <ontologies:pizza_0000082>1980-1989 saw the incorporation of much electronic based music because of the availability of the electronic keyboard synthesizer.</ontologies:pizza_0000082>
+        <rdfs:label xml:lang="en">1980s</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.music.owl/ontologies/music_0000088 -->
+
+    <owl:Class rdf:about="http://www.music.owl/ontologies/music_0000088">
+        <rdfs:subClassOf rdf:resource="http://www.music.owl/ontologies/music_0000070"/>
+        <rdfs:comment>Francis Albert Sinatra was an American singer, actor, and producer who was one of the most popular and influential musical artists of the 20th century.  He is one of the best-selling music artists of all time, having sold more than 150 million records worldwide.
+
+While Sinatra never formally learned how to read music, he had an impressive understanding of it, and he worked very hard from a young age to improve his abilities in all aspects of music. A perfectionist, renowned for his dress sense and performing presence, he always insisted on recording live with his band. His bright blue eyes earned him the popular nickname &quot;Ol&apos; Blue Eyes&quot;</rdfs:comment>
+        <rdfs:label xml:lang="en">Frank_Sinatra</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.music.owl/ontologies/music_0000089 -->
+
+    <owl:Class rdf:about="http://www.music.owl/ontologies/music_0000089">
+        <rdfs:subClassOf rdf:resource="http://www.music.owl/ontologies/music_0000070"/>
+        <rdfs:comment>Elvis Aron Presley was an American singer, musician, and actor. Regarded as one of the most significant cultural icons of the 20th century, he is often referred to as the &quot;King of Rock and Roll&quot;.
+
+His music career began in 1954 at Sun Records with producer Sam Phillips, who wanted to bring the sound of African American music to a wider audience.  RCA Victor acquired his contract in January 1956.</rdfs:comment>
+        <rdfs:label xml:lang="en">Elvis_Presley</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.music.owl/ontologies/music_0000090 -->
+
+    <owl:Class rdf:about="http://www.music.owl/ontologies/music_0000090">
+        <rdfs:subClassOf rdf:resource="http://www.music.owl/ontologies/music_0000070"/>
+        <rdfs:comment>Miles Davis was an American jazz trumpeter, bandleader, and composer. He is among the most influential and acclaimed figures in the history of jazz and 20th century music. Davis adopted a variety of musical directions in his five-decade career which kept him at the forefront of a number of major stylistic developments in jazz.</rdfs:comment>
+        <rdfs:label xml:lang="en">Miles_Davis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.music.owl/ontologies/music_0000091 -->
+
+    <owl:Class rdf:about="http://www.music.owl/ontologies/music_0000091">
+        <rdfs:subClassOf rdf:resource="http://www.music.owl/ontologies/music_0000070"/>
+        <ontologies:pizza_0000082>American singer of traditional pop standards, big band, show tunes, and jazz.</ontologies:pizza_0000082>
+        <rdfs:label xml:lang="en">Tony_Bennet</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.music.owl/ontologies/music_0000092 -->
+
+    <owl:Class rdf:about="http://www.music.owl/ontologies/music_0000092">
+        <rdfs:subClassOf rdf:resource="http://www.music.owl/ontologies/music_0000070"/>
+        <ontologies:pizza_0000082>American singer and actor, with a trademark warm bass-baritone voice. He was one of the best-selling recording artists of all time, having sold over one billion records, tapes, and CDs.  He was the first multimedia star; from 1931 to 1954 Crosby was a leader in record sales, radio ratings, and motion picture grosses.</ontologies:pizza_0000082>
+        <rdfs:label xml:lang="en">Bing_Crosby</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.music.owl/ontologies/music_0000093 -->
+
+    <owl:Class rdf:about="http://www.music.owl/ontologies/music_0000093">
+        <rdfs:subClassOf rdf:resource="http://www.music.owl/ontologies/music_0000068"/>
+        <ontologies:pizza_0000082>Also known as Rock and Roll, this gendre of music is closely associated with Elvis Presley and other white country-rock artists who made primarily black music available to white audeinces starting in the 1950&apos;s.</ontologies:pizza_0000082>
+        <rdfs:label xml:lang="en">Rock</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.music.owl/ontologies/music_0000094 -->
+
+    <owl:Class rdf:about="http://www.music.owl/ontologies/music_0000094">
+        <rdfs:subClassOf rdf:resource="http://www.music.owl/ontologies/music_0000068"/>
+        <ontologies:pizza_0000082>Almost a sub-set of jazz, Big Band referes to the era of swing music popular between the 1930&apos;s and 1950&apos;s.</ontologies:pizza_0000082>
+        <rdfs:label xml:lang="en">Big_Band</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.music.owl/ontologies/music_0000095 -->
+
+    <owl:Class rdf:about="http://www.music.owl/ontologies/music_0000095">
+        <rdfs:subClassOf rdf:resource="http://www.music.owl/ontologies/music_0000068"/>
+        <ontologies:pizza_0000082>Also referred to as adult coontemporary, it is a broad category that entails almost all contemporaty non-country, non--rock music from the 1950&apos;s onward.</ontologies:pizza_0000082>
+        <rdfs:label xml:lang="en">Pop</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.music.owl/ontologies/music_0000096 -->
+
+    <owl:Class rdf:about="http://www.music.owl/ontologies/music_0000096">
+        <rdfs:subClassOf rdf:resource="http://www.music.owl/ontologies/music_0000068"/>
+        <ontologies:pizza_0000082>Classical music is music produced or rooted in the traditions of Western culture, including both liturgical (religious) and secular music.  While the term is also used to refer to the period from 1750 to 1820 (the Classical period), the central norms of Classical tradition became codified between 1550 and 1900.</ontologies:pizza_0000082>
+        <rdfs:label xml:lang="en">Classical</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.music.owl/ontologies/music_0000097 -->
+
+    <owl:Class rdf:about="http://www.music.owl/ontologies/music_0000097">
+        <rdfs:subClassOf rdf:resource="http://www.music.owl/ontologies/music_0000070"/>
+        <ontologies:pizza_0000082>Operatic tenor who also crossed over into popular music, eventually becoming one of the most commercially successful tenors of all time.</ontologies:pizza_0000082>
+        <rdfs:label xml:lang="en">Luciano_Pavarotti</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.music.owl/ontologies/music_0000102 -->
+
+    <owl:Class rdf:about="http://www.music.owl/ontologies/music_0000102">
+        <ontologies:pizza_0000082>Orchestrator</ontologies:pizza_0000082>
+        <rdfs:label xml:lang="en">Arranger</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.music.owl/ontologies/music_0000103 -->
+
+    <owl:Class rdf:about="http://www.music.owl/ontologies/music_0000103">
+        <ontologies:pizza_0000082>Album title or name</ontologies:pizza_0000082>
+        <rdfs:label xml:lang="en">Title</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.music.owl/ontologies/music_0000105 -->
+
+    <owl:Class rdf:about="http://www.music.owl/ontologies/music_0000105">
+        <rdfs:subClassOf rdf:resource="http://www.music.owl/ontologies/music_0000102"/>
+        <ontologies:pizza_0000082>May was a trumpet player with the Glen Miller Orchestra who became famous for his song writing, conducting and arranging.  His arrangements were known for the loud brass section.</ontologies:pizza_0000082>
+        <rdfs:label xml:lang="en">Billy_May</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.music.owl/ontologies/music_0000107 -->
+
+    <owl:Class rdf:about="http://www.music.owl/ontologies/music_0000107">
+        <rdfs:subClassOf rdf:resource="http://www.music.owl/ontologies/music_0000102"/>
+        <ontologies:pizza_0000082>Mandel was a trumpet player turned song writer and arranger whose most famous song is &quot;Suicide Is Painless&quot; (theme from the movie and TV series M*A*S*H).</ontologies:pizza_0000082>
+        <rdfs:label xml:lang="en">Johnny_Mandel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.music.owl/ontologies/music_0000108 -->
+
+    <owl:Class rdf:about="http://www.music.owl/ontologies/music_0000108">
+        <rdfs:subClassOf rdf:resource="http://www.music.owl/ontologies/music_0000102"/>
+        <ontologies:pizza_0000082>Chips ran American Studios in Memphis.  He was an exacting producer who made a name for himself in the late 1960&apos;s.</ontologies:pizza_0000082>
+        <rdfs:label xml:lang="en">Chips_Moman</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.music.owl/ontologies/music_0000117 -->
+
+    <owl:Class rdf:about="http://www.music.owl/ontologies/music_0000117">
+        <rdfs:subClassOf rdf:resource="http://www.music.owl/ontologies/music_0000102"/>
+        <ontologies:pizza_0000082>Riddle was a trombone player turned arranger who became THE arranger for Capitol records artists such as Nat King Cole, Peggy Lee and Frank Sinatra.</ontologies:pizza_0000082>
+        <rdfs:label xml:lang="en">Nelson_Riddle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.music.owl/ontologies/music_0000119 -->
+
+    <owl:Class rdf:about="http://www.music.owl/ontologies/music_0000119">
+        <rdfs:subClassOf rdf:resource="http://www.music.owl/ontologies/music_0000071"/>
+        <rdfs:comment>Capitol Records is a major American record label founded in 1942 by industry insiders Johnny Mercer, Buddy DeSylva and Glenn E. Wallichs.  Capitol built an iconic round (record shaped) office tower and recording facility at Hollywood and Vine Streets in Los Angeles.</rdfs:comment>
+        <rdfs:label xml:lang="en">Capitol</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.music.owl/ontologies/music_0000124 -->
+
+    <owl:Class rdf:about="http://www.music.owl/ontologies/music_0000124">
+        <rdfs:subClassOf rdf:resource="http://www.music.owl/ontologies/music_0000102"/>
+        <ontologies:pizza_0000082>Jenkins was a composer and pianist who was an influential figure in popular music in the 1940s and 1950s, renowned for his lush string arrangements.</ontologies:pizza_0000082>
+        <rdfs:label xml:lang="en">Gordon_Jenkins</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.music.owl/ontologies/music_0000125 -->
+
+    <owl:Class rdf:about="http://www.music.owl/ontologies/music_0000125">
+        <rdfs:subClassOf rdf:resource="http://www.music.owl/ontologies/music_0000102"/>
+        <ontologies:pizza_0000082>Costa was an American conductor and record producer who discovered singer Paul Anka and worked on several hit albums by Frank Sinatra, including the famous My Way LP.</ontologies:pizza_0000082>
+        <rdfs:label xml:lang="en">Don_Costa</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.music.owl/ontologies/pizza_0000106 -->
+
+    <owl:Class rdf:about="http://www.music.owl/ontologies/pizza_0000106">
+        <rdfs:subClassOf rdf:resource="http://www.music.owl/ontologies/music_0000103"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.music.owl/ontologies/pizza_0000081"/>
+                <owl:allValuesFrom rdf:resource="http://www.music.owl/ontologies/music_0000075"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.music.owl/ontologies/pizza_0000112"/>
+                <owl:allValuesFrom rdf:resource="http://www.music.owl/ontologies/music_0000107"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.music.owl/ontologies/pizza_0000114"/>
+                <owl:allValuesFrom rdf:resource="http://www.music.owl/ontologies/music_0000095"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.music.owl/ontologies/pizza_0000115"/>
+                <owl:allValuesFrom rdf:resource="http://www.music.owl/ontologies/music_0000085"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.music.owl/ontologies/pizza_0000116"/>
+                <owl:allValuesFrom rdf:resource="http://www.music.owl/ontologies/music_0000091"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <ontologies:pizza_0000082>Bennet&apos;s Move Song Album contained his major hit &quot;The Shadow of Your Smile&quot; which was subsequently covered by numerous artists, including Frank Sinatra.</ontologies:pizza_0000082>
+        <rdfs:label xml:lang="en">The_Movie_Song_Album</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.music.owl/ontologies/pizza_0000110 -->
+
+    <owl:Class rdf:about="http://www.music.owl/ontologies/pizza_0000110">
+        <rdfs:subClassOf rdf:resource="http://www.music.owl/ontologies/music_0000103"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.music.owl/ontologies/pizza_0000081"/>
+                <owl:allValuesFrom rdf:resource="http://www.music.owl/ontologies/music_0000075"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.music.owl/ontologies/pizza_0000114"/>
+                <owl:allValuesFrom rdf:resource="http://www.music.owl/ontologies/music_0000077"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.music.owl/ontologies/pizza_0000115"/>
+                <owl:allValuesFrom rdf:resource="http://www.music.owl/ontologies/music_0000084"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.music.owl/ontologies/pizza_0000116"/>
+                <owl:allValuesFrom rdf:resource="http://www.music.owl/ontologies/music_0000090"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <ontologies:pizza_0000082>This classic Jazz album has become one of the most successful jazz albums of all time.</ontologies:pizza_0000082>
+        <rdfs:label xml:lang="en">Kind_of_Blue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.music.owl/ontologies/pizza_0000118 -->
+
+    <owl:Class rdf:about="http://www.music.owl/ontologies/pizza_0000118">
+        <rdfs:subClassOf rdf:resource="http://www.music.owl/ontologies/music_0000103"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.music.owl/ontologies/pizza_0000081"/>
+                <owl:allValuesFrom rdf:resource="http://www.music.owl/ontologies/music_0000119"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.music.owl/ontologies/pizza_0000112"/>
+                <owl:allValuesFrom rdf:resource="http://www.music.owl/ontologies/music_0000105"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.music.owl/ontologies/pizza_0000114"/>
+                <owl:allValuesFrom rdf:resource="http://www.music.owl/ontologies/music_0000095"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.music.owl/ontologies/pizza_0000115"/>
+                <owl:allValuesFrom rdf:resource="http://www.music.owl/ontologies/music_0000084"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.music.owl/ontologies/pizza_0000116"/>
+                <owl:allValuesFrom rdf:resource="http://www.music.owl/ontologies/music_0000088"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <ontologies:pizza_0000082>One of Sinatra&apos;s most important 1950&apos;s LPs. It started a small series of Come &apos;something&apos; with me albums (Come Dance With Me, Come Swing with Me).</ontologies:pizza_0000082>
+        <rdfs:label xml:lang="en">Come_Fly_With_Me</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.music.owl/ontologies/pizza_0000120 -->
+
+    <owl:Class rdf:about="http://www.music.owl/ontologies/pizza_0000120">
+        <rdfs:subClassOf rdf:resource="http://www.music.owl/ontologies/music_0000103"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.music.owl/ontologies/pizza_0000081"/>
+                <owl:allValuesFrom rdf:resource="http://www.music.owl/ontologies/music_0000074"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.music.owl/ontologies/pizza_0000112"/>
+                <owl:allValuesFrom rdf:resource="http://www.music.owl/ontologies/music_0000108"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.music.owl/ontologies/pizza_0000114"/>
+                <owl:allValuesFrom rdf:resource="http://www.music.owl/ontologies/music_0000093"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.music.owl/ontologies/pizza_0000115"/>
+                <owl:allValuesFrom rdf:resource="http://www.music.owl/ontologies/music_0000085"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.music.owl/ontologies/pizza_0000116"/>
+                <owl:allValuesFrom rdf:resource="http://www.music.owl/ontologies/music_0000089"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Elvis&apos; first top selling album of the 1960&apos;s</rdfs:comment>
+        <rdfs:label xml:lang="en">From_Elvis_in_Memphis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.music.owl/ontologies/pizza_0000121 -->
+
+    <owl:Class rdf:about="http://www.music.owl/ontologies/pizza_0000121">
+        <rdfs:subClassOf rdf:resource="http://www.music.owl/ontologies/music_0000103"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.music.owl/ontologies/pizza_0000081"/>
+                <owl:allValuesFrom rdf:resource="http://www.music.owl/ontologies/music_0000119"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.music.owl/ontologies/pizza_0000112"/>
+                <owl:allValuesFrom rdf:resource="http://www.music.owl/ontologies/music_0000117"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.music.owl/ontologies/pizza_0000114"/>
+                <owl:allValuesFrom rdf:resource="http://www.music.owl/ontologies/music_0000095"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.music.owl/ontologies/pizza_0000115"/>
+                <owl:allValuesFrom rdf:resource="http://www.music.owl/ontologies/music_0000084"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.music.owl/ontologies/pizza_0000116"/>
+                <owl:allValuesFrom rdf:resource="http://www.music.owl/ontologies/music_0000088"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <ontologies:pizza_0000082>One of the best Sinatra albums, and an early example of Sinatra&apos;s concept albums, where he showed a talent for setting a musical mood and maintianing it throughout the album.</ontologies:pizza_0000082>
+        <rdfs:label xml:lang="en">In_The_Wee_Small_Hours</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.music.owl/ontologies/pizza_0000122 -->
+
+    <owl:Class rdf:about="http://www.music.owl/ontologies/pizza_0000122">
+        <rdfs:subClassOf rdf:resource="http://www.music.owl/ontologies/music_0000103"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.music.owl/ontologies/pizza_0000081"/>
+                <owl:allValuesFrom rdf:resource="http://www.music.owl/ontologies/music_0000083"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.music.owl/ontologies/pizza_0000112"/>
+                <owl:allValuesFrom rdf:resource="http://www.music.owl/ontologies/music_0000117"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.music.owl/ontologies/pizza_0000114"/>
+                <owl:allValuesFrom rdf:resource="http://www.music.owl/ontologies/music_0000095"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.music.owl/ontologies/pizza_0000115"/>
+                <owl:allValuesFrom rdf:resource="http://www.music.owl/ontologies/music_0000085"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.music.owl/ontologies/pizza_0000116"/>
+                <owl:allValuesFrom rdf:resource="http://www.music.owl/ontologies/music_0000088"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <ontologies:pizza_0000082>Although not the best song on the album Strangers In The Night was the title of this LP as it was a top Billboard hit for Sinatra.</ontologies:pizza_0000082>
+        <rdfs:label xml:lang="en">Strangers_In_The_Night</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.music.owl/ontologies/pizza_0000123 -->
+
+    <owl:Class rdf:about="http://www.music.owl/ontologies/pizza_0000123">
+        <rdfs:subClassOf rdf:resource="http://www.music.owl/ontologies/music_0000103"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.music.owl/ontologies/pizza_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://www.music.owl/ontologies/music_0000083"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.music.owl/ontologies/pizza_0000112"/>
+                <owl:someValuesFrom rdf:resource="http://www.music.owl/ontologies/music_0000124"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.music.owl/ontologies/pizza_0000112"/>
+                <owl:someValuesFrom rdf:resource="http://www.music.owl/ontologies/music_0000125"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.music.owl/ontologies/pizza_0000114"/>
+                <owl:allValuesFrom rdf:resource="http://www.music.owl/ontologies/music_0000095"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.music.owl/ontologies/pizza_0000115"/>
+                <owl:allValuesFrom rdf:resource="http://www.music.owl/ontologies/music_0000086"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.music.owl/ontologies/pizza_0000116"/>
+                <owl:allValuesFrom rdf:resource="http://www.music.owl/ontologies/music_0000088"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <ontologies:pizza_0000082>Using his nick-name of Ol&apos; Blue Eyes, this LP announced the return to recording by Frank Sinatra after a short retirement between 1971 and 1973.</ontologies:pizza_0000082>
+        <rdfs:label xml:lang="en">Ol_Blue_Eyes_Is_Back</rdfs:label>
+    </owl:Class>
+    <rdf:Description>
+        <rdfs:comment>type of music</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment>Album</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment>Arranger</rdfs:comment>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
